@@ -66,4 +66,5 @@ reset.addEventListener("click",()=>{
     compscore=0;
     totalcompscore.innerText=compscore;
     totaluserscore.innerText=userscore;
+    msg.innerText="Play your move"
 })
