@@ -52,6 +52,20 @@ const playgame=(userchoice)=>{
     }
     totalcompscore.innerText=compscore;
     totaluserscore.innerText=userscore;
+    if(userscore==10){
+        msg.innerText="You won this Match";
+    }
+    if(compscore==10){
+        msg.innerText="You lost this Match";
+    }
+    if(compscore>10||userscore>10){
+        console.log(("Reseted"));
+        userscore=0;
+        compscore=0;
+        totalcompscore.innerText=compscore;
+        totaluserscore.innerText=userscore;
+        msg.innerText="Play your move";
+    }
 }
 choices.forEach((choice)=>{
     choice.addEventListener("click",()=>{
